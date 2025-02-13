@@ -1,45 +1,119 @@
-html{
+
+html {
     background-color: grey;
-body {
-  background-image: url("../s1fp/Contents/Sens-Closed.png");
-  background-size: cover; 
-  background-position: center; 
-  background-repeat: no-repeat; 
-  
 }
 
-    #bonfire img{
-        width: 300px;
-        height: auto;
-        margin-left: 45%;
-        margin-right: auto;
-        position:absolute;
-        top:500px;
+/* Sens Fortress Front Img */
+body {
+    background-image: url("/s1fp/Contents/Sens-Closed.png"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+#bonfire img {
+    width: 300px;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 500px;
+    transform: translateX(-40%);
+}
+
+/* Bonfire background animation */
+#bonfire-bg {
+    position: absolute;
+    width: 100vw;
+    height: 100px;
+    top: 44%;
+    background-color: rgba(8, 6, 6, 0.486);
+    filter: blur(3px);
+
+    animation: fadeIn 4s ease-in-out forwards;
+}
+
+/* Bonfire text animation */
+.bonfire-text {
+    font-family: "Adobe Garamond", serif;
+    position: absolute;
+    bottom: -17%;
+    left: 25%;
+    font-weight: normal;
+    color: #f08040;
+    font-size: 120px;
+    filter: blur(2px);
+
+   
+    animation: fadeIn 3s ease-in-out forwards;
+}
+
+/* Keyframes for fade-in effect */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
         
+        filter: blur(10px);
     }
-
-    #bonfire-bg{
-        position:absolute;
-        width: 100vw;
-        height: 100px;
-        top: 44%;
-        background-color: rgba(8, 6, 6, 0.486);
-        filter: blur(3px); 
-        animation:ease-in-out;
-        animation-duration: 2s;
-
+    50% {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(2px);
     }
-
-    .bonfire-text{
-        font-family: "Adobe Garamond", serif;
-        position:absolute;
-        bottom: -17%;
-        margin-left: 25%;
-        font-weight: normal;
-        color: #f08040;
-        font-size: 120px;
-        filter: blur(2px); 
-        animation: ease-in-out;
-        animation-duration: 2s;
+    100%{
+        opacity: 0;
+        
+        filter: blur(10px);
     }
+}
+
+
+/* Front Gate Animation */
+#FrontgateL {
+    
+    width: 200px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    
+    
+}
+
+#FrontgateF {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: -200px;
+    width: 600px;
+    height: 50px;
+    border-top: 1px rgb(155, 102, 32) solid; 
+    border-bottom: 1px rgb(155,102,32) solid; 
+    margin-top: 60%;
+    opacity: 0;  /* Initially hidden */
+    transition: opacity 0.5s ease-in-out; /* Add transition for smooth fade-in */
+}
+
+#FrontgateL:hover > #FrontgateF{
+    opacity: 1;
+}
+
+.Promptext{
+    font-family: "Adobe Garamond", serif;
+    position: absolute;
+    bottom: 25%;
+    left: 25%;
+    font-weight: narrow;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    
+}
+
+/*Real Door */
+#RealD{
+    
+    width: 200px;
+    height: 400px;
+    position: absolute;
+    left: 35%;
+    top: 5%;
 }
