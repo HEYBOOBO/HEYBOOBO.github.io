@@ -1,0 +1,21 @@
+html {
+    background-color: grey;
+}
+
+/* Room1 Background */
+body {
+    background-image: url("../s1fp/Contents/Room1.png"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#Room1Exit{
+
+    position:absolute;
+    /*background-color: black;*/
+    Top:20%;
+    left:45%;
+    width: 400px;
+    Height: 80vh;
+}
