@@ -1,11 +1,11 @@
-
+/*THIS CSS STYLIZES EVERY HOME PAGES*/
 html {
-    background-color: grey;
+    background-color: black;
 }
 
 /* Sens Fortress Front Img */
 body {
-    background-image: url("/s1fp/Contents/Sens-Closed.png"); 
+    background-image: url("../s1fp/Contents/Sens-Closed.png"); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -35,7 +35,7 @@ body {
 
 /* Bonfire text animation */
 .bonfire-text {
-    font-family: "Adobe Garamond", serif;
+    font-family: "Optimus Princeps", serif;
     position: absolute;
     bottom: -17%;
     left: 25%;
@@ -116,4 +116,31 @@ body {
     position: absolute;
     left: 35%;
     top: 5%;
+}
+
+
+/* YOU DIED animation */
+
+#YOU_DIED-bg{
+
+    background-color: black;
+    filter: blur(3px);
+    width: 100vw;
+    height:100vh;
+    animation: fadeIn 4s ease-in-out forwards;
+}
+
+
+.DIED-text {
+    font-family: "Optimus Princeps";
+    position: absolute;
+    bottom: 45%;
+    left: 35%;
+    font-weight: normal;
+    color: red;
+    font-size: 120px;
+    filter: blur(2px);
+
+   
+    animation: fadeIn 5s ease-in-out forwards;
 }
