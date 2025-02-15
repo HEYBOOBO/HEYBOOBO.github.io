@@ -1,0 +1,25 @@
+
+#MimicDeath img {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    animation: FadeOut 3s ease-out forwards;
+    
+
+}
+
+
+@keyframes FadeOut {
+    0% {
+        opacity: 1;
+        
+        
+    }
+
+    100%{
+        opacity: 0;
+        
+        filter: blur(10px);
+        visibility:hidden;
+    }
+}

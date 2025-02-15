@@ -13,9 +13,9 @@ body {
 
 /*CHEST LEFT*/
 #ChestL{
-    background-color: black;
+    /*background-color: black;*/
     width: 25vw;
-    Height: 20vh;
+    Height: 25vh;
     Position:absolute;
     Bottom: 10vh;
     left: 25vw;
@@ -25,7 +25,7 @@ body {
 #ChestF {
     background-color: rgba(0, 0, 0, 0.5);
     position: relative;
-    left: 20px;
+    left: 35%;
     width: 100px;
     height: 50px;
     border-top: 1px rgb(155, 102, 32) solid; 
@@ -42,9 +42,9 @@ body {
 /* CHEST RIGHT*/
 
 #Chest2L{
-    background-color: black;
+    /*background-color: black;*/
     width: 25vw;
-    Height: 20vh;
+    Height: 25vh;
     Position:absolute;
     Bottom: 10vh;
     right: 14vw;
