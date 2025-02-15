@@ -5,7 +5,7 @@ html {
 
 /* Sens Fortress Front Img */
 body {
-    background-image: url("../s1fp/Contents/Sens-Closed.png"); 
+    background-image: url("Contents/Sens-Closed.png"); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

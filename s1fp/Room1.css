@@ -4,7 +4,7 @@ html {
 
 /* Room1 Background */
 body {
-    background-image: url("../s1fp/Contents/Room1.png"); 
+    background-image: url("Contents/Room1.png"); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
