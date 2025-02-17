@@ -1,0 +1,71 @@
+html {
+    background-color: grey;
+}
+
+/* Room1 Background */
+body {
+    background-image: url("Contents/Firelink.png"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#Miyazaki img {
+    width: auto; /* Adjust as needed */
+    height: 20vh;
+}
+
+
+
+#Readme {
+    background-color: rgba(0, 0, 0, 0.8);  
+    position:absolute;
+    bottom: 30vh;
+    left: 25vw;
+    width: 50vw;
+    height: 50vh;
+    border-top: 1px rgb(155, 102, 32) solid; 
+    border-bottom: 1px rgb(155,102,32) solid;
+    
+    
+}
+
+#restart a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.8);  
+    color: white;
+    font-weight: narrow;
+
+    
+}
+
+
+.right {
+    float: right;
+    background-color: rgba(0, 0, 0, 0.8);  
+    position: relative;
+    right:10%;
+    font-size: 20px;
+    border-top: 1px rgb(155, 102, 32) solid; 
+    border-bottom: 1px rgb(155,102,32) solid;
+  }
+
+.top {
+    float: inline-start;
+    background-color: black;
+    border-top: 1px rgb(155, 102, 32) solid; 
+    border-bottom: 1px rgb(155,102,32) solid;
+  }
+
+  .Promptext{
+    font-family: "Adobe Garamond", serif;
+    position: relative;
+    left: 5%;
+    padding-right: 10%;
+    font-weight: narrow;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    line-height: 1.2;
+    
+}
