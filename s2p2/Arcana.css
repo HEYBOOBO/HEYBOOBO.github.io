@@ -1,0 +1,110 @@
+html {
+    background-color: black;
+    padding: 2vw;
+}
+
+h1{
+
+    color:white;
+    
+}
+
+/*Backface of Arcana*/
+
+.back{
+    position: absolute;
+    top:0;
+    left:0;    
+    width:10vw;
+    height:18vw;
+    
+    backface-visibility: hidden;
+}
+
+td{
+    transform-style: preserve-3d;
+}
+
+
+
+.Arcana{
+    position:relative;
+    width:10vw;
+    height:18vw;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+
+}
+
+
+.flipease {
+    transition: 1s ease;
+  }
+  
+
+
+  .Cardtext{
+    width:9vw;
+    height: 9vh;
+    margin: 5;
+    color:white;
+    position:absolute;
+    left:0%;
+    font-size: 1.2vw;
+
+    
+    
+}
+
+.wrapper {
+    position: relative;
+    width: 20vw;
+    height: 18vw;
+    transform-style: preserve-3d;
+  }
+
+  td:hover > .wrapper {
+    transform: rotateY(180deg);
+  }
+
+
+
+/* .Right {
+    position:absolute;
+    top: 10vw;
+    left:55vw;
+    width:50vw;
+    height: 90vw;
+    display: flex;
+    align-items: center;
+    transform-style: preserve-3d;
+    visibility: visible;
+
+}
+
+
+
+.Largecard {
+    position:absolute;
+    top: 0vw;
+    left:0vw;
+    width:20vw;
+    height: 36vw;
+    padding-top: 10vh;
+    padding-left:5vw;
+    visibility: hidden; 
+
+}
+
+.Largecardtext {
+    color: white;
+    font-size: 4vh; 
+    position: absolute;
+    top:30vh;
+    left:30vw;
+} */
+
+
+
+
+
