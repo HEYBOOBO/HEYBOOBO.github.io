@@ -1,0 +1,24 @@
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>p5 Image Sampler</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.min.js"></script>
+    <script src="sketch.js" defer></script>
+  </head>
+  <body>
+    
+    <h1>DOT ART GENERATOR</h1>
+    <div id="ui">
+      <label for="sampleSlider">Sample Size:</label> 
+      <input type="range" id="sampleSlider" min="5" max="100" value="20" /> 
+      <button class="button"> Randomize</button>
+    </div>
+    <br>
+    <button class="upload">Upload your own Image</button>
+    <br>
+    <main id="canvas-container"></main>
+  </body>
+</html>
