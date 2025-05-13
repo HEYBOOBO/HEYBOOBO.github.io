@@ -1,0 +1,295 @@
+header {
+  background-color: #bbb;
+  position: fixed;
+  top: 20px;
+  width: 100vh;
+
+  justify-content: flex-start;
+  font-family: 'Public Pixel', sans-serif;
+}
+
+
+
+body {
+  font-family: 'Public Pixel', sans-serif;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  image-rendering: pixelated;
+  background-color: #ccc;
+  position: fixed;
+  background-image:
+    linear-gradient(0deg, #bbb 1px, transparent 1px),
+    linear-gradient(90deg, #bbb 1px, transparent 1px);
+  background-size: 4px 4px;
+  /* Smaller = more pixelated */
+}
+
+#startup {
+
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 1;
+  transition: opacity 1s ease;
+  /* Smooth transition */
+}
+
+#startup.fade-out {
+  opacity: 0;
+  pointer-events: none;
+  /* So the button can't be clicked again while fading */
+}
+
+
+.card-container {
+  width: 80vh;
+  height: 50vh;
+  background: white;
+  border: 2px solid black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  font-family: 'Public Pixel', sans-serif;
+  z-index: 20;
+
+
+}
+
+.field {
+
+  padding: 20px;
+  line-height: 2;
+  font-size: 10px;
+}
+
+/* .image-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+} */
+
+.card-image {
+  flex: 1;
+  width: 100%;
+  filter: grayscale();
+  image-rendering: pixelated;
+}
+
+/* .image-row .card-image, 
+.image-row a {
+  flex: 1 1 50%;
+  max-width: 50%;
+} */
+
+/*this defines the styles of whatever image is in the card container" */
+
+.card-content {
+  flex: 1;
+  overflow-y: auto;
+
+}
+
+
+
+
+.field {
+  border: 1px solid black;
+  padding: 15px;
+  margin: 5px 0;
+  background-color: white;
+  min-height: 50px;
+  font-family: 'Public Pixel', sans-serif;
+  font-size: 13px;
+
+  justify-content: center;
+  /* horizontal center */
+  align-items: center;
+  /* vertical center */
+  text-align: center;
+
+}
+
+
+
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+button {
+
+  background: white;
+  border: 1px solid black;
+  padding: 5px 15px;
+  cursor: pointer;
+  font-family: 'Public Pixel', sans-serif;
+}
+
+button:hover {
+  background: #e0e0e0;
+}
+
+.card-number {
+  font-size: 10px;
+  text-align: left;
+  margin-top: 8px;
+
+}
+
+
+#stickers {
+  filter: grayscale();
+  image-rendering: pixelated;
+  transform-style: preserve-3d;
+  /* Needed for Z-axis transforms */
+  perspective: 800px;
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+
+}
+
+
+.sticker {
+  transition: opacity 0.3s ease;
+}
+
+#stickers:hover .sticker {
+  opacity: 0.1;
+}
+
+#stickers .sticker:hover {
+  opacity: 1;
+  transform: translateZ(60px);
+}
+
+
+
+#S1P1 {
+  width: 200px;
+  position: fixed;
+  padding: 8vh;
+  top: 5vh;
+  left: -25vh;
+  transform: rotateZ(30deg);
+
+}
+
+#S1P2 {
+  width: 250px;
+  position: fixed;
+  left: 70vh;
+  top: 15vh;
+  transform: rotateZ(-20deg);
+}
+
+#S1FP {
+  width: 250px;
+  position: fixed;
+  top: -35vh;
+  right: -6vw;
+
+
+  transform: rotateZ(-20deg);
+
+}
+
+#S2P2 {
+  width: 200px;
+  position: fixed;
+  padding: 8vh;
+  left: 15vw;
+  top: 90px;
+  transform: rotateZ(10deg);
+
+}
+
+#S2FP {
+  width: 600px;
+  position: fixed;
+  top: -40vh;
+  left: 5vh;
+  transform: rotateZ(-10deg);
+
+}
+
+#S3P1 {
+  width: 200px;
+  position: fixed;
+  top: -20vh;
+  left: -2vh;
+  transform: rotateZ(-30deg);
+
+}
+
+#S3P2 {
+  width: 90px;
+  position: fixed;
+
+  top: -40vh;
+  left: 90vh;
+  transform: rotateZ(30deg);
+
+}
+
+#S3FP {
+  width: 150px;
+  position: fixed;
+
+  top: 10vh;
+  left: 10vh;
+  transform: rotateZ(35deg);
+
+}
+
+
+.field2 {
+  border: 1px solid black;
+  padding: 8px;
+  margin: 5px 0;
+  background-color: white;
+  min-height: 50px;
+  font-family: 'Comic Sans MS', 'Comic Sans', sans-serif;
+  font-size: 25px;
+  line-height: 1.5;
+  justify-content: center;
+  /* horizontal center */
+  align-items: center;
+  /* vertical center */
+  text-align: left;
+
+}
+
+
+
+
+p {
+
+  font-size: 12px;
+}
+
+h3{
+
+  font-family: 'Public Pixel', sans-serif;
+  font-size:18px;
+}
